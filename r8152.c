@@ -7653,7 +7653,7 @@ static const struct net_device_ops rtl8152_netdev_ops = {
 #endif /* LINUX_VERSION_CODE < KERNEL_VERSION(3,0,0) */
 	.ndo_set_rx_mode	= rtl8152_set_rx_mode,
 	.ndo_set_mac_address	= rtl8152_set_mac_address,
-	.ndo_change_mtu_rh74	= rtl8152_change_mtu,
+	.ndo_change_mtu	= rtl8152_change_mtu,
 	.ndo_validate_addr	= eth_validate_addr,
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(3,18,4)
 	.ndo_features_check	= rtl8152_features_check,
